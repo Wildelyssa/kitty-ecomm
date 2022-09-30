@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* main styles */
+body {
+  font-size: 18px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: inherit;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-img-div {
+  border-top: solid 8px aquamarine;
+  border-right: solid 8px aquamarine;
+  border-left: solid 8px aquamarine;
+  border-bottom: solid 4px aquamarine;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.logo-container h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-container p {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+/* cart styles */
+.cart-container {
+  margin: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.cart-product-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 1rem 1rem 2rem 1rem;
+  padding: 0.5rem;
+  box-shadow: lightgrey 1px 1px 5px;
+}
+/* product listing styles */
+.product-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 0.5rem;
+}
+.product-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem 1rem 2rem 1rem;
+  padding: 0.5rem;
+  box-shadow: lightgrey 1px 1px 5px;
+}
+.product-info {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cart-product-info {
+  min-width: 350px;
+}
+/* button style */
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.primary-btn {
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: rgba(245, 242, 213);
+  cursor: pointer;
+  min-width: 150px;
+}
+.primary-btn:hover {
+  opacity: 0.7;
+}
+/* header style */
+.container {
+  background-color: aquamarine;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cart-div {
+  padding: 0.5rem 0;
+  background-color: white;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 8px aquamarine;
+}
+.cart-div span {
+  border-radius: 80%;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.cart-div a {
+  text-align: center;
+}
+.cost-details {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: bold;
 }
